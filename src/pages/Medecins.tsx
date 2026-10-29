@@ -1,0 +1,16 @@
+import { useState } from 'react';
+import { Link } from 'react-router';
+import { MEDECINS, TEMOIGNAGES } from '../lib/data';
+import { IconCalendar, IconChevronRight, IconStar } from '../lib/icons';
+
+const SPECIALITES = ['Tous', ...Array.from(new Set(MEDECINS.map((m) => m.specialite)))];
+export default function Medecins() {
+  const [filtre, setFiltre] = useState('Tous');
+  const liste = filtre === 'Tous' ? MEDECINS : MEDECINS.filter((m) => m.specialite === filtre);
+  return <>
+    <section className="page-hero py-16 lg:py-20"><div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><nav className="flex items-center gap-2 text-blue-300 text-sm mb-6"><Link to="/">Accueil</Link><IconChevronRight/><span className="text-white">Nos médecins</span></nav><h1 className="text-3xl sm:text-5xl font-bold text-white mb-4">Notre équipe médicale</h1><p className="text-blue-200 max-w-2xl text-lg">24 praticiens passionnés, sélectionnés pour leur expertise clinique et leur sens de l'écoute.</p></div></section>
+    <div className="bg-white border-b sticky top-24 z-10"><div className="max-w-7xl mx-auto px-4 py-3 flex gap-2 overflow-x-auto">{SPECIALITES.map((sp) => <button key={sp} onClick={() => setFiltre(sp)} className={`shrink-0 px-4 py-1.5 rounded-full text-sm ${filtre === sp ? 'bg-royal text-white' : 'bg-slate-100 text-slate-600'}`}>{sp}</button>)}</div></div>
+    <section className="py-16 bg-slate-50"><div className="max-w-7xl mx-auto px-4"><div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{liste.map((m) => <article key={m.nom} className="bg-white rounded-2xl overflow-hidden border hover:shadow-xl"><div className="relative h-72"><img src={m.photo} alt={m.alt} className="w-full h-full object-cover object-top"/><span className={`absolute top-4 right-4 px-2.5 py-1 rounded-full text-xs font-semibold ${m.disponible ? 'bg-emerald-100 text-emerald-700' : 'bg-slate-100'}`}>{m.disponible ? '● Disponible' : '○ Complet'}</span></div><div className="p-6"><p className="text-xs font-semibold text-royal uppercase">{m.specialite}</p><h3 className="text-xl font-bold mt-1">{m.nom}</h3><p className="text-sm text-slate-500 mb-3">{m.experience}</p><p className="text-sm text-slate-600 mb-4">{m.bio}</p><div className="flex flex-wrap gap-2 mb-5">{m.langues.map((l) => <span key={l} className="text-xs bg-slate-100 px-2.5 py-1 rounded-full">{l}</span>)}</div><Link to="/rendez-vous" className={`flex justify-center gap-2 py-3 rounded-xl font-bold text-sm ${m.disponible ? 'bg-royal text-white' : 'bg-slate-100 text-slate-400'}`}><IconCalendar/>{m.disponible ? 'Prendre rendez-vous' : 'Complet'}</Link></div></article>)}</div></div></section>
+    <section className="py-16 bg-white"><div className="max-w-7xl mx-auto px-4"><h2 className="text-3xl font-bold text-center mb-12">Ils font confiance à notre équipe</h2><div className="grid md:grid-cols-3 gap-6">{TEMOIGNAGES.slice(0,3).map((t) => <div key={t.nom} className="bg-slate-50 rounded-2xl p-6"><div className="flex text-amber-400">{Array.from({length:t.note}).map((_,i)=><IconStar key={i}/>)}</div><blockquote className="mt-4 text-sm italic">“{t.texte}”</blockquote><p className="mt-5 font-semibold">{t.nom}</p></div>)}</div></div></section>
+  </>;
+}
