@@ -4,6 +4,11 @@ function Icon({ children, className = 'w-6 h-6', fill = 'none' }: { children?: R
   return <svg viewBox="0 0 24 24" fill={fill} stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className={className}>{children ?? <><circle cx="12" cy="12" r="9"/><path d="M12 7v10M7 12h10"/></>}</svg>;
 }
 export const IconHeart = () => <Icon><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/></Icon>;
+export const IconStethoscope = () => <Icon><path d="M6 3v5a4 4 0 0 0 8 0V3M4 3h4M12 3h4M10 12v2a6 6 0 0 0 12 0v-1"/><circle cx="20" cy="10" r="2"/></Icon>;
+export const IconScalpel = () => <Icon><path d="m4 20 9-9M14 10l6-6 2 2-6 6M4 20l-1 1M9 15l3 3"/></Icon>;
+export const IconSyringe = () => <Icon><path d="m18 2 4 4M14 6l4 4M3 21l8-8M7 17l-3-3M11 13l-3-3 7-7 6 6-7 7M2 22l3-3"/></Icon>;
+export const IconHospital = () => <Icon><path d="M3 21h18M5 21V5h14v16M9 9h2m2 0h2m-6 4h2m2 0h2m-5 8v-4h4v4"/><path d="M10 2h4v3h-4z"/></Icon>;
+export const IconPill = () => <Icon><path d="M10.5 20.5 20 11a5.66 5.66 0 0 0-8-8l-9.5 9.5a5.66 5.66 0 0 0 8 8zM8 8l8 8"/></Icon>;
 export const IconBrain = () => <Icon/>;
 export const IconBone = () => <Icon/>;
 export const IconEye = () => <Icon><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></Icon>;

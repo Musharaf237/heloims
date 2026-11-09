@@ -1,14 +1,35 @@
-import { IconHeart, IconBrain, IconBone, IconEye, IconActivity, IconMicroscope, IconBaby, IconTooth } from './icons';
+import {
+  IconActivity,
+  IconBaby,
+  IconHospital,
+  IconMicroscope,
+  IconPill,
+  IconScalpel,
+  IconStethoscope,
+  IconSyringe,
+  IconUsers,
+} from './icons';
+
+export const CONTACT_INFO = {
+  location: 'Douala, Nyalla Pariso',
+  phones: [
+    { label: '+237 699 803 324', href: 'tel:+237699803324' },
+    { label: '+237 676 358 484', href: 'tel:+237676358484' },
+  ],
+  email: 'contact@heloimsante.fr',
+};
 
 export const SERVICES = [
-  { icon: <IconHeart />, titre: 'Cardiologie', desc: 'Bilan cardiovasculaire, ECG, Holter, suivi des pathologies cardiaques et de l\'hypertension.', details: ['Électrocardiogramme (ECG)', 'Holter ECG 24h et tensionnel', 'Échographie cardiaque', 'Test d\'effort', 'Suivi insuffisance cardiaque'], slug: 'cardiologie' },
-  { icon: <IconBrain />, titre: 'Neurologie', desc: 'Céphalées, troubles du sommeil, suivi neurologique complet et maladies neurodégénératives.', details: ['Consultation céphalées et migraines', 'Bilan troubles du sommeil', 'Suivi Parkinson et SEP', 'Électroencéphalogramme (EEG)', 'Neurostimulation'], slug: 'neurologie' },
-  { icon: <IconBone />, titre: 'Rhumatologie', desc: 'Arthrose, lombalgies, maladies articulaires inflammatoires et rééducation fonctionnelle.', details: ['Infiltrations articulaires', 'Bilan ostéoporose', 'Suivi polyarthrite rhumatoïde', 'Rééducation fonctionnelle', 'Traitement lombalgies chroniques'], slug: 'rhumatologie' },
-  { icon: <IconEye />, titre: 'Ophtalmologie', desc: 'Contrôle de la vue, fond d\'œil, prescription optique et chirurgie réfractive.', details: ['Examen de la réfraction', 'Fond d\'œil numérisé', 'Dépistage glaucome', 'Traitement DMLA', 'Prescription verres et lentilles'], slug: 'ophtalmologie' },
-  { icon: <IconActivity />, titre: 'Médecine générale', desc: 'Consultations, prévention, certificats médicaux, vaccination et médecine du travail.', details: ['Consultations sans rendez-vous', 'Suivi maladies chroniques', 'Vaccinations adulte et enfant', 'Certificats médicaux', 'Médecine du voyage'], slug: 'medecine-generale' },
-  { icon: <IconMicroscope />, titre: 'Biologie médicale', desc: 'Prélèvements sur site, analyses complètes et résultats sécurisés en ligne sous 24h.', details: ['Prise de sang sur rendez-vous', 'Bilan lipidique et diabétique', 'Sérologies et microbiologie', 'Bilan hormonal', 'Résultats via espace patient'], slug: 'biologie' },
-  { icon: <IconBaby />, titre: 'Pédiatrie', desc: 'Suivi de croissance, vaccinations, consultations nourrissons et adolescents.', details: ['Consultations nourrissons', 'Suivi courbe de croissance', 'Vaccinations calendrier officiel', 'Bilan développement psychomoteur', 'Consultations adolescents'], slug: 'pediatrie' },
-  { icon: <IconTooth />, titre: 'Dentisterie', desc: 'Soins conservateurs, implantologie, orthodontie adulte et urgences dentaires.', details: ['Détartrage et soins conservateurs', 'Pose d\'implants dentaires', 'Orthodontie aligneurs adulte', 'Blanchiment dentaire', 'Prothèses et bridges'], slug: 'dentisterie' },
+  { icon: <IconStethoscope />, titre: 'Consultations générales et prénatales', desc: 'Consultations médicales courantes et suivi prénatal pour accompagner les futures mamans.', details: ['Consultations générales', 'Consultations prénatales'], slug: 'consultations' },
+  { icon: <IconUsers />, titre: 'Planning familial', desc: 'Un espace d’écoute et de conseil autour de la santé reproductive et de la vie familiale.', details: ['Conseils en planning familial', 'Accompagnement et information'], slug: 'planning-familial' },
+  { icon: <IconScalpel />, titre: 'Petite chirurgie', desc: 'Prise en charge de petites interventions chirurgicales.', details: ['Petites interventions chirurgicales'], slug: 'petite-chirurgie' },
+  { icon: <IconSyringe />, titre: 'Circoncision', desc: 'Service de circoncision proposé par notre établissement.', details: ['Prise de rendez-vous pour une circoncision'], slug: 'circoncision' },
+  { icon: <IconSyringe />, titre: 'Vaccinations', desc: 'Vaccinations pour vous accompagner dans la prévention et la protection de votre santé.', details: ['Consultation de vaccination'], slug: 'vaccinations' },
+  { icon: <IconActivity />, titre: 'Kinésithérapie', desc: 'Séances de kinésithérapie pour vous accompagner dans votre rééducation.', details: ['Séances de kinésithérapie'], slug: 'kinesitherapie' },
+  { icon: <IconMicroscope />, titre: 'Laboratoire', desc: 'Un laboratoire pour vos examens et analyses médicales.', details: ['Examens de laboratoire', 'Analyses médicales'], slug: 'laboratoire' },
+  { icon: <IconHospital />, titre: 'Hospitalisation', desc: 'Accueil et prise en charge des patients nécessitant une hospitalisation.', details: ['Accueil pour hospitalisation'], slug: 'hospitalisation' },
+  { icon: <IconPill />, titre: 'Parapharmacie', desc: 'Des produits de parapharmacie pour vous accompagner au quotidien.', details: ['Produits de parapharmacie'], slug: 'parapharmacie' },
+  { icon: <IconBaby />, titre: 'Accouchement', desc: 'Accompagnement des futures mamans pour leur accouchement.', details: ['Accompagnement à l’accouchement'], slug: 'accouchement' },
 ];
 
 export const MEDECINS = [
