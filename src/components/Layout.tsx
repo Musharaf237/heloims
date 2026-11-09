@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import { CONTACT_INFO } from '../lib/data';
+import SymptomAssistant from './SymptomAssistant';
 
 export default function Layout() {
   const { pathname } = useLocation();
@@ -13,6 +14,7 @@ export default function Layout() {
       <Header />
       <main id="contenu-principal" className="flex-1 pt-[calc(2.5rem+4rem)] sm:pt-[calc(1.75rem+4rem)]"><Outlet /></main>
       <Footer />
+      <SymptomAssistant />
       <a
         href={`https://wa.me/${CONTACT_INFO.whatsapp}`}
         target="_blank"
