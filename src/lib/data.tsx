@@ -46,7 +46,13 @@ export const TEMOIGNAGES = [
   { nom: 'Jean-Paul B.', note: 5, date: 'Juin 2026', service: 'Pédiatrie', texte: 'Le Dr Lefebvre est formidable avec notre fils.' },
 ];
 export const HORAIRES = [
-  { jour: 'Lundi – Vendredi', heures: '08h00 – 20h00' }, { jour: 'Samedi', heures: '09h00 – 17h00' }, { jour: 'Dimanche', heures: 'Fermé (urgences uniquement)' }, { jour: 'Urgences', heures: '7j/7, 24h/24' },
+  { jour: 'Lundi', heures: '24h/24' },
+  { jour: 'Mardi', heures: '24h/24' },
+  { jour: 'Mercredi', heures: '24h/24' },
+  { jour: 'Jeudi', heures: '24h/24' },
+  { jour: 'Vendredi', heures: '24h/24' },
+  { jour: 'Samedi', heures: '24h/24' },
+  { jour: 'Dimanche', heures: '24h/24' },
 ];
 export const NAV_LINKS = [
   { label: 'Accueil', href: '/' }, { label: 'Services', href: '/services' }, { label: 'Nos médecins', href: '/medecins' }, { label: 'Prendre RDV', href: '/rendez-vous' }, { label: 'Contact', href: '/contact' },
