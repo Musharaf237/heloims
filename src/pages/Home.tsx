@@ -143,7 +143,7 @@ export default function Home() {
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-royal">Notre équipe</p>
               <h2 className="mt-3 font-display text-3xl font-bold text-slate-900 sm:text-4xl">
-                Des médecins à votre écoute
+                Nos spécialistes à votre écoute
               </h2>
             </div>
             <Link to="/medecins" className="inline-flex items-center gap-2 font-semibold text-royal hover:text-royal-light">
@@ -151,8 +151,8 @@ export default function Home() {
               <IconArrowRight />
             </Link>
           </div>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {MEDECINS.slice(0, 4).map((medecin) => (
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {MEDECINS.slice(0, 3).map((medecin) => (
               <article key={medecin.nom} className="surface-card overflow-hidden rounded-2xl bg-white">
                 <img
                   src={medecin.photo}
