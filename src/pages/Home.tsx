@@ -15,7 +15,7 @@ import {
 
 const stats = [
   { icon: <IconUsers />, value: '12 000+', label: 'Patients suivis' },
-  { icon: <IconAward />, value: '15 ans', label: "D'excellence médicale" },
+  { icon: <IconAward />, value: '15 mois', label: "D'excellence médicale" },
   { icon: <IconShield />, value: '24 spécialistes', label: 'Médecins certifiés' },
   { icon: <IconClock />, value: '48h', label: 'Délai de RDV moyen' },
 ];
