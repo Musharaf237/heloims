@@ -17,7 +17,7 @@ export const CONTACT_INFO = {
     { label: '+237 676 358 484', href: 'tel:+237676358484' },
   ],
   whatsapp: '237699803324',
-  email: 'contact@heloimsante.fr',
+  email: 'contact@heloimsante.com',
 };
 
 export const SERVICES = [
