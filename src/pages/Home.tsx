@@ -55,7 +55,7 @@ export default function Home() {
               <span className="text-blue-200">notre priorité</span>
             </h1>
             <p className="mb-8 max-w-xl text-lg leading-relaxed text-blue-100">
-              Un centre de santé pluridisciplinaire à taille humaine. Des médecins engagés, des soins de qualité, et une équipe dédiée à votre bien-être depuis 2008.
+              Un centre de santé pluridisciplinaire à taille humaine. Des médecins engagés, des soins de qualité, et une équipe dédiée à votre bien-être depuis 2026.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
               <Link

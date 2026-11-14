@@ -36,14 +36,13 @@ export const SERVICES = [
 export const MEDECINS = [
   { nom: 'TPMS-AM', specialite: 'Responsable du laboratoire', experience: '', formation: '', langues: [], disponible: true, photo: '/images/responsable-laboratoire.jpeg', alt: 'TPMS-AM, responsable du laboratoire', bio: 'Responsable du laboratoire du centre Heloimsanté.' },
   { nom: 'Infirmière supérieure', specialite: 'Infirmière supérieure', experience: '', formation: '', langues: [], disponible: true, photo: '/images/infirmiere-superieure.jpeg', alt: 'Infirmière supérieure du centre Heloimsanté', bio: 'Infirmière supérieure du centre Heloimsanté.' },
-  { nom: 'Dr. Marc Lefebvre', specialite: 'Pédiatre', experience: '20 ans d\'expérience', formation: 'Hôpital Necker — Enfants malades', langues: ['Français'], disponible: true, photo: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=480&fit=crop&auto=format', alt: 'Dr. Marc Lefebvre, pédiatre', bio: 'Pédiatre passionné, le Dr Lefebvre accompagne les enfants et leurs familles.' },
+  { nom: 'CEO Madame Omoungo', specialite: 'Consultante en planning familial', experience: '', formation: '', langues: [], disponible: true, photo: '/images/madame-omoungo.jpeg', alt: 'Madame Omoungo, CEO et consultante en planning familial', bio: 'Madame Omoungo est CEO du centre et consultante en planning familial.' },
 ];
 
 export const TEMOIGNAGES = [
   { nom: 'Marie-Claire D.', note: 5, date: 'Septembre 2026', service: 'Cardiologie', texte: 'Accueil chaleureux, équipe très professionnelle. Je recommande vivement.' },
   { nom: 'Pierre G.', note: 5, date: 'Août 2026', service: 'Médecine générale', texte: 'Un centre de santé comme on en voit peu : locaux modernes et personnel attentionné.' },
   { nom: 'Sylvie M.', note: 5, date: 'Juillet 2026', service: 'Urgences', texte: 'L\'efficacité et la bienveillance de l\'équipe m\'ont vraiment rassurée.' },
-  { nom: 'Jean-Paul B.', note: 5, date: 'Juin 2026', service: 'Pédiatrie', texte: 'Le Dr Lefebvre est formidable avec notre fils.' },
 ];
 export const HORAIRES = [
   { jour: 'Lundi', heures: '24h/24' },
